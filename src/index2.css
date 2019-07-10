@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+body {
+  font-family: 'Oswald';
+   font-size: 20px;
+   min-width: 400px;
+   max-width: 1600px;
+   min-height: 1000px;
+   margin: 0 auto;
+   color: rgb(0, 0, 0);
+   background-image: radial-gradient(at right bottom, rgb(14, 0, 0), rgb(209, 206, 24))
+}
+.cardfield {
+  padding: 10px 20px 50px 20px;
+  height: 900px;
+  background-image: radial-gradient(at right bottom, rgb(0, 0, 0), rgb(155, 141, 15));
+}
+
+.card {
+  display: inline-block;
+  min-width: 100px;
+   min-height: 200px;
+   border: 2px solid rgb(75, 58, 23);
+   animation: color-me-in 800ms;  /* можно добавить "infinite alternate" */
+   border-radius: 10px;
+}
+p {
+  text-align: center;
+  font-size: 28px;
+}
+.step{
+  color: rgb(255, 255, 255);
+}
+h1 {
+  color: rgb(255, 255, 255);
+}
+@keyframes color-me-in {
+  /* можно назвать "шаг 1" */
+  0% {     
+    transform: rotateY(0deg);
+  }
+  25% { 
+      
+    transform: rotateY(180deg);
+  }
+  50% { 
+   
+    transform: rotateY(270deg);
+  }
+  75% { 
+    background-color: black;  
+    transform: rotateY(360deg);
+  }
+  /* можно назвать "шаг 2" */
+  100% {
+    background-color: black;
+    transform: rotateY(0deg);  
+    
+  }
+}
